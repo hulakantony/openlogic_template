@@ -23,9 +23,10 @@ body{
 }
 
 .main-wrap{
-  background: linear-gradient(to bottom, rgba(225,232,237,.9) 0%, rgba(254,254,254,.8) 337px),
+  background: linear-gradient(to bottom, rgba(225,232,237,.9) 0%, rgba(254,254,254,1) 500px),
   url(../images/world_map.png) no-repeat 50% 0 transparent;              
   min-width: $contentWidth;
+
 }
 .content-wrap{
   max-width: $contentWidth;
@@ -194,9 +195,10 @@ body{
     }
   }
 }
-main{
+main{  
   .content-wrap{
-    display: table;
+    display: table;    
+    width: $contentWidth;     
   }
   
 }
@@ -205,7 +207,7 @@ main{
   width: 245px;
   border-right: 1px solid #b9b9b9;  
   display: table-cell;
-  vertical-align: top;
+  vertical-align: top;  
   h2{
     font: bold 18px/1 $Arial;
     margin: 0;
